@@ -92,9 +92,10 @@ console.log(yearsUntilRetirement(1950, 'Mike'));
 
 // Challenge 1
 // function storeData(score1, score2, score3){
-    //     const avg = calcAverage(score1, score2, score3);
-    //     return avg;
-    // }
+//     const avg = calcAverage(score1, score2, score3);
+//     return avg;
+// }
+
 
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
@@ -117,3 +118,16 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 
 checkWinner(scoreDolphins, scoreKoalas);
 checkWinner(avgDolphins2, avgKoalas2);
+
+
+// challenge 2
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+console.log(bills, tips, total);
+
