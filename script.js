@@ -156,6 +156,7 @@ const arafat = {
 console.log(arafat.getSummary());
 */
 
+/*
 // Challenge 3
 
 const mark = {
@@ -194,31 +195,85 @@ if (mark.bmi > john.bmi) {
 }
 
 
-// const mark = {
-//     fullName: 'Mark Miller',
-//     mass: 78,
-//     height: 1.69,
-//     calcBMI: function () {
-//       this.bmi = this.mass / (this.height * this.height);
-//       return this.bmi;
-//     }
-//   };
+const mark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+      this.bmi = this.mass / (this.height * this.height);
+      return this.bmi;
+    }
+  };
    
-//   const john = {
-//     fullName: 'John Smith',
-//     mass: 92,
-//     height: 1.95,
-//     calcBMI: function () {
-//       this.bmi = this.mass / (this.height * this.height);
-//       return this.bmi;
-//     }
-//   };
+  const john = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+      this.bmi = this.mass / (this.height * this.height);
+      return this.bmi;
+    }
+  };
    
-//   mark.calcBMI();
-//   john.calcBMI();
+  mark.calcBMI();
+  john.calcBMI();
    
-//   if (mark.bmi > john.bmi) {
-//     console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})!`)
-//   } else if (john.bmi > mark.bmi) {
-//     console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`)
-//   }
+  if (mark.bmi > john.bmi) {
+    console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})!`)
+  } else if (john.bmi > mark.bmi) {
+    console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`)
+  }
+*/
+
+/*
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep}`);
+}
+
+const Arafat = [
+  "Arafat",
+  "Hossain",
+  2037 - 2002,
+  "programmer",
+  ["Michael", "Peter", "Steven"],
+  true,
+];
+
+for (let i = 0; i < Arafat.length; i++){
+    console.log(Arafat[i], typeof Arafat[i]);
+}
+
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for(let i = 0; i < years.length; i++){ 
+    ages.push(2037-years[i]);
+}
+
+console.log(ages);
+
+// continue and break
+console.log('---ONLY STRINGS---');
+
+for (let i = 0; i < Arafat.length; i++){
+    if (typeof Arafat[i] !== 'string') continue;
+    console.log(Arafat[i], typeof Arafat[i]);
+};
+
+console.log('---BREAK WITH NUMBER---');
+
+for (let i = 0; i < Arafat.length; i++){
+    if (typeof Arafat[i] === 'number') break;
+    console.log(Arafat[i], typeof Arafat[i]);
+};
+*/
+
+const Arafat = [
+    "Arafat",
+    "Hossain",
+    2037 - 2002,
+    "programmer",
+    ["Michael", "Peter", "Steven"],
+    true,
+  ];
