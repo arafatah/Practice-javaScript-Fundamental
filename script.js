@@ -267,7 +267,7 @@ for (let i = 0; i < Arafat.length; i++){
     if (typeof Arafat[i] === 'number') break;
     console.log(Arafat[i], typeof Arafat[i]);
 };
-*/
+
 
 const Arafat = [
     "Arafat",
@@ -277,3 +277,72 @@ const Arafat = [
     ["Michael", "Peter", "Steven"],
     true,
   ];
+
+for (let i = Arafat.length - 1; i >= 0; i--){
+    console.log(i, Arafat[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++){
+    console.log(`------Starting exercise ${exercise}`);
+    for (let rep = 1; rep < 6; rep++){
+        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
+    }
+}
+
+*/
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep}`);
+}
+
+let rep = 1;
+while (rep <= 10) {
+  console.log(`White: Lifting weights repetition ${rep}`);
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log("Loop is about to end...");
+}
+
+// challenge 4
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(bills[i] + tip);
+}
+
+console.log(bills, tips, totals)
+
+const calcAverage = function(arr){ 
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++){
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+
+console.log(calcAverage(totals));
+console.log(calcAverage(tips));
+
+
+
+
+
+
+
+
+
