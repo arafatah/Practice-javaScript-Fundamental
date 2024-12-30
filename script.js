@@ -399,7 +399,6 @@ const calcTempAmplitudeNew = function(t1, t2){
 
 const amplitude = calcTempAmplitudeNew([3, 5, 1], [9, 0, 5]);
 console.log(amplitude);
-
 */
 
 
@@ -411,6 +410,11 @@ const printForecast = function (arr) {
     for (let i = 0; i < arr.length; i++){
         str += `${arr[i]}°C in ${i + 1} days...`;
     }
+   /*  
+   // ES6
+   for (const [i, temp] of arr.entries()) {
+        str += `${temp}°C in ${i + 1} days...`;
+    } */
     console.log('...' + str);
 }
 
