@@ -401,22 +401,32 @@ const amplitude = calcTempAmplitudeNew([3, 5, 1], [9, 0, 5]);
 console.log(amplitude);
 */
 
-
 const data1 = [17, 21, 23];
 const data2 = [12, 5, -5, 0, 4];
 
 const printForecast = function (arr) {
-    let str = '';
-    for (let i = 0; i < arr.length; i++){
-        str += `${arr[i]}°C in ${i + 1} days...`;
-    }
-   /*  
+  let str = "";
+  for (let i = 0; i < arr.length; i++) {
+    str += `${arr[i]}°C in ${i + 1} days...`;
+  }
+  /*  
    // ES6
    for (const [i, temp] of arr.entries()) {
         str += `${temp}°C in ${i + 1} days...`;
     } */
-    console.log('...' + str);
-}
+  console.log("..." + str);
+};
+
+const printForecast2 = function (arr) {
+  let str = "";
+  for (let i = 0; i < arr.length; i++) {
+    str = str + `${arr[i]}°C in ${i + 1} days...`;
+  }
+  console.log("..." + str);
+};
+
+printForecast2(data1);
 
 printForecast(data1);
 printForecast(data2);
+
