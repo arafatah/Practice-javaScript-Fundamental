@@ -430,3 +430,50 @@ printForecast2(data1);
 printForecast(data1);
 printForecast(data2);
 
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Exercise ${rep}: Lifting weights repetition ${rep}`);
+}
+
+// while loop
+let rep = 1;
+while (rep <= 10) {
+  console.log(`Lifiting nice ${rep}`);
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+// looping to get the value 6
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log("Loop is about to end");
+}
+
+const calcClip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+const bills = [22, 283, 424, 135, 1100, 440, 10, 86, 53];
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+  const tip = calcClip(bills[i]);
+  tips.push(tip);
+  totals.push(tip + bills[i]);
+}
+console.log(bills, tips, totals);
+
+const calcAverage = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum / arr.length;
+};
+
+console.log(calcAverage([3, 4, 4]));
+console.log(calcAverage(totals));
+console.log(calcAverage(tips));
